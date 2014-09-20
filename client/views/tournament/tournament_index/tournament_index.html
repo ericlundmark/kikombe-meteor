@@ -1,0 +1,50 @@
+
+<template name="TournamentIndex">
+	<div class="container">       
+		<div class="panel panel-default">
+			<!-- Default panel contents -->
+			<div class="panel-heading">
+				Panel heading
+				<button class="btn btn-xs btn-default pull-right" data-toggle="modal" href="#myModal" >My Modal</button>     
+			</div>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Name</th>
+						<th>Active</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each tournaments}}
+					<tr>
+						<td>1</td>
+						<td>{{name}}</td>
+						<td>{{isActive start end}}</td>
+					</tr>
+					{{/each}}
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+	{{>myModal}}    
+</template>
+
+<template name="myModal">
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<a class="close" data-dismiss="modal">×</a>
+			<h3>This is a Modal Heading</h3>                     
+		</div>          
+		<div class="modal-body" >                          
+			<h4>Text in a modal</h4>                     
+			<p>You can add some text here.</p>                
+		</div>            
+		<div class="modal-footer">
+			<a href="#" class="btn btn-success">Call to action</a>
+			<a href="#" class="btn" data-dismiss="modal">Close</a>
+		</div>  
+	</div><!-- /.modal -->
+</template>
