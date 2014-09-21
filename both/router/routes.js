@@ -14,6 +14,6 @@ Router.map(function () {
     Example:
       this.route('home', {path: '/'});
   */
-  this.route('game.index', {path: '/game', template: 'GameIndex'});
-  this.route('tournament.index', {path: '/tournament', template: 'TournamentIndex'});
+  this.route('game.index', {path: '/game'});
+  this.route('tournament.index', {path: '/tournament'});
 });

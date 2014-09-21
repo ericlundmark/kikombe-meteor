@@ -11,7 +11,7 @@
 			"file": "both/router/routes.js",
 			"settings":
 			{
-				"buffer_size": 648,
+				"buffer_size": 596,
 				"line_ending": "Unix"
 			}
 		},
@@ -27,7 +27,15 @@
 			"file": "client/views/tournament/tournament_index/tournament_index.html",
 			"settings":
 			{
-				"buffer_size": 1351,
+				"buffer_size": 1617,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "both/collections/tournament.js",
+			"settings":
+			{
+				"buffer_size": 187,
 				"line_ending": "Unix"
 			}
 		}
@@ -35,9 +43,17 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 306.0,
 		"selected_items":
 		[
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
 			[
 				"pa",
 				"Package Control: Install Package"
@@ -70,17 +86,11 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/Users/ericlundmark/Documents/kikombe-meteor",
-		"/Users/ericlundmark/Documents/kikombe-meteor/client",
-		"/Users/ericlundmark/Documents/kikombe-meteor/client/views",
-		"/Users/ericlundmark/Documents/kikombe-meteor/client/views/layouts",
-		"/Users/ericlundmark/Documents/kikombe-meteor/client/views/tournament",
-		"/Users/ericlundmark/Documents/kikombe-meteor/client/views/tournament/tournament_index"
-	],
 	"file_history":
 	[
+		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/server/packages/insecure.js",
+		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/ctl/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Number/is-nan.js",
+		"/home/eric/Documents/kikombe-meteor/.meteor/packages",
 		"/Users/ericlundmark/Documents/kikombe-meteor/server/startup/loadUsers.js",
 		"/Users/ericlundmark/Documents/kikombe/client/app/cup/cup.js",
 		"/Users/ericlundmark/Documents/kikombe/server/api/tournament/tournament.controller.js",
@@ -124,7 +134,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -133,15 +143,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 648,
+						"buffer_size": 596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								648,
-								648
+								588,
+								588
 							]
 						],
 						"settings":
@@ -184,7 +194,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -193,21 +203,49 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1351,
+						"buffer_size": 1617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								216,
-								216
+								1168,
+								1168
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "both/collections/tournament.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
