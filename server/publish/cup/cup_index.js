@@ -1,6 +1,8 @@
 /*****************************************************************************/
-/* App: The Global Application Namespace */
+/* CupIndex Publish Functions
 /*****************************************************************************/
-App = {
-	datetimeFormat: 'dddd DD.MM.YYYY HH:mm'
-};
+
+Meteor.publish('cup_index', function () {
+  // you can remove this if you return a cursor
+  this.ready();
+});

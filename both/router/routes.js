@@ -10,10 +10,18 @@ Router.configure({
 });
 
 Router.map(function () {
-  /*
-    Example:
-      this.route('home', {path: '/'});
-  */
   this.route('game.index', {path: '/game'});
+  this.route('game.create', {
+    path: '/tournament/:tournament/group/:group/game/create'
+  });
   this.route('tournament.index', {path: '/tournament'});
+  this.route('tournament.show', {
+    path: '/tournament/:_id',
+    data: function() { return Tournament.findOne(this.params._id); }
+  });
+
+  this.route('cup.index', {
+    path: '/cup',
+    data: function() { return Cup.find({});}
+  });
 });

@@ -1,0 +1,80 @@
+
+<template name="TournamentShow">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="affix">
+					<div id="main" class="row">
+						<h1>{{name}}</h1>
+						<p><strong>Start date:</strong> {{format startDate}}</p>
+						<p><strong>End date:</strong> {{format endDate}}</p>
+					</div>
+				</div>
+			</div>
+			<div id="detail" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Add group</a>
+				{{#each groups}}
+				<h2>Group {{name}} <a href="{{pathFor 'game.create' tournament=../_id group=name}}" type="button" class="btn btn-sm btn-default pull-right">Add game</a></h2>
+				<div class="panel panel-default">
+					<div class="panel-heading"><h3 class="panel-title">Teams</h3></div>
+					<ul class="list-group">
+						{{#each teams}}
+						<li class="list-group-item">{{this}}</li>
+						{{/each}}
+					</ul>
+				</div>
+				<div class="list-group">
+					{{#each games}}
+					<a href="{{pathFor 'game.create'}}" class="list-group-item list-group-game active">
+						<div class="row">
+							<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+								<p>{{home.name}} - {{away.name}}</p>		
+							</div>
+							<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+								<p>{{home.goals}} - {{away.goals}}</p>
+							</div>
+						</div>
+					</a>
+					{{/each}}
+				</div>
+				{{/each}}
+			</div>
+			{{#if selectedGame}}
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="affix">
+					{{#with selectedGame}}
+					<div id="edit" class="row">
+						<h1 class="text-center">{{home.name}} - {{away.name}}</h1>
+						<p class="text-center"> <span class="glyphicon glyphicon-time"></span> {{format start}}</p>
+						<row><input type="text" value="{{home.goals}}"><input type="text" value="{{away.goals}}"></row>
+					</div>
+					{{/with}}
+				</div>
+			</div>
+			{{/if}}
+		</div>
+	</div>
+	<div class="modal fade" id="modal-id">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="name">Group name</label>
+							<input type="text" class="form-control" id="name" placeholder="Name">
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" id="submit" class="btn btn-primary">Add group</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</template>
+

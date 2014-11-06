@@ -1,0 +1,27 @@
+
+<template name="GameCreate">
+	<div class="container">
+		<div class="row">
+			<form action="submit" method="POST" role="form">
+				<legend>Add game</legend>
+				
+				<div class="form-group">
+					<label for="home">Home team</label>
+					<input type="text" class="form-control" id="home" placeholder="Home team">
+				</div>
+				<div class="form-group">
+					<label for="away">Away team</label>
+					<input type="text" class="form-control" id="away" placeholder="Away team">
+				</div>
+				<div class="form-group">
+					<label for="start">Tournament start</label>
+					<input type="text" class="form-control datetimepicker" id="start" placeholder="Start date">
+				</div>
+				
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>		
+		</div>
+	</div>
+	
+</template>
+

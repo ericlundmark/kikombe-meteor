@@ -1,19 +1,13 @@
 /*****************************************************************************/
-/* Game Methods */
+/* Cup Methods */
 /*****************************************************************************/
 
 Meteor.methods({
  /*
   * Example:
-  *  '/app/game/update/email': function (email) {
+  *  '/app/cup/update/email': function (email) {
   *    Users.update({_id: this.userId}, {$set: {'profile.email': email}});
   *  }
   *
   */
-
-  '/app/game/create': function (game) {
-  	Game.create(game);
-  }
-  
-  
 });

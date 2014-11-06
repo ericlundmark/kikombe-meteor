@@ -1,0 +1,24 @@
+/*****************************************************************************/
+/* TournamentShow: Style */
+/*****************************************************************************/
+#main
+{
+	background-color: #ff4520;
+	height: 100vh;
+}
+#detail
+{
+	background-color: #206aff;
+}
+#edit
+{
+	height: 100vh;
+	background-color: #45ff20;
+}
+#alternate
+{
+	background-color: #45ff20;
+}
+.affix{
+	top: 0px !important;
+}

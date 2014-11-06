@@ -3,42 +3,130 @@
 	{
 		"selected_items":
 		[
+			[
+				"wid",
+				"width"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"selec",
+				"selectedGame"
+			],
+			[
+				"sel",
+				"selectedGame"
+			],
+			[
+				"fi",
+				"find"
+			],
+			[
+				"fin",
+				"function"
+			],
+			[
+				"gro",
+				"groupName"
+			],
+			[
+				"to",
+				"tournament"
+			],
+			[
+				"g",
+				"g"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"te",
+				"teamName"
+			],
+			[
+				"a",
+				"away_team"
+			],
+			[
+				"toru",
+				"tournamentId"
+			],
+			[
+				"ga",
+				"games"
+			],
+			[
+				"gr",
+				"groupName"
+			],
+			[
+				"To",
+				"Tournament"
+			],
+			[
+				"p",
+				"push"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"end",
+				"end"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"st",
+				"startDate"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"t",
+				"tournament"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"Tor",
+				"tournament"
+			],
+			[
+				"crea",
+				"created"
+			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "both/router/routes.js",
-			"settings":
-			{
-				"buffer_size": 596,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/app.html",
-			"settings":
-			{
-				"buffer_size": 1014,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/views/tournament/tournament_index/tournament_index.html",
-			"settings":
-			{
-				"buffer_size": 1617,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "both/collections/tournament.js",
-			"settings":
-			{
-				"buffer_size": 187,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -88,6 +176,23 @@
 	},
 	"file_history":
 	[
+		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_show/tournament_show.css",
+		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_index/tournament_index.js",
+		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_show/tournament_show.js",
+		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_show/tournament_show.html",
+		"/home/eric/Documents/kikombe-meteor/client/app.html",
+		"/home/eric/Documents/kikombe-meteor/both/router/routes.js",
+		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_index/tournament_index.html",
+		"/home/eric/Documents/kikombe-meteor/server/seed/tournament.js",
+		"/home/eric/Documents/kikombe-meteor/server/seed/game.js",
+		"/home/eric/Documents/kikombe-meteor/both/methods/tournament.js",
+		"/home/eric/Documents/kikombe-meteor/client/views/game/game_create/game_create.html",
+		"/home/eric/Documents/kikombe-meteor/client/app.js",
+		"/home/eric/Documents/kikombe-meteor/client/views/game/game_create/game_create.js",
+		"/home/eric/Documents/kikombe-meteor/both/methods/game.js",
+		"/home/eric/Documents/kikombe-meteor/both/app.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/game.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/tournament.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/server/packages/insecure.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/ctl/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Number/is-nan.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/packages",
@@ -102,7 +207,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -116,6 +221,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"div",
+			"game",
 			"                    \n"
 		],
 		"highlight": true,
@@ -134,126 +241,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "both/router/routes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 596,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								588,
-								588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "client/app.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								811,
-								811
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "client/views/tournament/tournament_index/tournament_index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1617,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1168,
-								1168
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 351.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "both/collections/tournament.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 187,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -263,7 +252,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
