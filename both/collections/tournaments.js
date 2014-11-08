@@ -51,11 +51,18 @@ Tournaments = new Mongo.Collection('tournaments', {
  	set author(value){
  		this._author=value;
  	},
-    addGroup: function(group){
-        if (_.contains(this._groups, group)) {
+    addGame: function(game, group){
+        this.getGroup(group).games.push(game);
+    },
+    addGroup: function(name){
+        if (this.getGroup(name)) {
             throw new Meteor.Error("Group already added!");
         };
+        var group = { name: name, games: []};
         this._groups.push(group);
+    },
+    getGroup: function(group){
+        return _.findWhere(this._groups, {name: group});
     },
  	save: function(callback) {
  		if (!this.name) {
@@ -72,7 +79,7 @@ Tournaments = new Mongo.Collection('tournaments', {
  		};
         // remember the context since in callback it is changed
         var that = this;
-        var doc = {name: this.name, startDate: this.startDate, endDate: this.endDate};
+        var doc = {name: this.name, startDate: this.startDate, endDate: this.endDate, groups: this.groups};
 
         if (this.id) {
         	Tournaments.update(this.id, {$set: doc}, callback);

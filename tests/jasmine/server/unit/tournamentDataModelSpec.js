@@ -20,7 +20,7 @@ describe("Tournament", function(){
 
 		expect(Tournaments.insert).toHaveBeenCalled();
 		expect(Tournaments.insert.calls.mostRecent().args[0]).toEqual({name:"Tournament",
-			startDate: startDate, endDate: endDate, author:null});
+			startDate: startDate, endDate: endDate, groups: [],author:null});
 	});
 
 	it("should be possible to update the name, start date and end date", function(){
@@ -40,7 +40,8 @@ describe("Tournament", function(){
         // use last call to access arguments
         expect(Tournaments.update).toHaveBeenCalled();
         expect(Tournaments.update.calls.mostRecent().args[0]).toEqual("1");
-        expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "EM", startDate:updatedStartDate, endDate: updatedEndDate}});
+        expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "EM", startDate:updatedStartDate,
+        	endDate: updatedEndDate, groups: []}});
     });
 
 	it("should not save when name is not defined", function(){
@@ -78,15 +79,43 @@ describe("Tournament", function(){
         expect(Tournaments.remove.calls.mostRecent().args[0]).toEqual("1");
     });
 
-    it("should be possible to add a group to a tournament", function(){
-    	var tournament = new Tournament("1");
-    	tournament.addGroup("A");
-    	expect(tournament.groups.length).toBe(1);
-    });
+	it("should be possible to add a group to a tournament", function(){
+		spyOn(Tournaments, "update");
+		var startDate = Date.now();
+		var tournament = new Tournament("1", "VM", startDate, startDate + 1);
+		tournament.addGroup("A");
+		expect(tournament.groups.length).toBe(1);
+		tournament.save();
 
-    it("should not be possible not add the same group twice", function(){
-    	var tournament = new Tournament("1");
-    	tournament.addGroup("A");
-    	expect(function(){ tournament.addGroup("A") }).toThrow();
-    });
+		expect(Tournaments.update).toHaveBeenCalled();
+		expect(Tournaments.update.calls.mostRecent().args[0]).toEqual("1");
+		expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "VM", startDate: startDate,
+			endDate: startDate + 1, groups: [{name: "A", games: []}]}});
+	});
+
+	it("should not be possible not add the same group twice", function(){
+		var tournament = new Tournament("1");
+		tournament.addGroup("A");
+		expect(function(){ tournament.addGroup("A") }).toThrow();
+	});
+
+	it("should be possible to add a game to one group", function(){
+		spyOn(Tournaments, "update");
+		var startDate = Date.now();
+		var tournament = new Tournament("1", "VM", startDate, startDate + 1);
+
+		var group = "A";
+		tournament.addGroup(group);
+
+		var game = {home: "home", away: "away", start: Date.now};
+		tournament.addGame(game, group);
+		expect(tournament.getGroup(group).games.length).toBe(1);
+
+		tournament.save();
+
+		expect(Tournaments.update).toHaveBeenCalled();
+		expect(Tournaments.update.calls.mostRecent().args[0]).toEqual("1");
+		expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "VM", startDate: startDate,
+			endDate: startDate + 1, groups: [{name: "A", games: [game]}]}});
+	});
 });
