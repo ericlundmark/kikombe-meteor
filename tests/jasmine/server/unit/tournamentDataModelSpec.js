@@ -27,7 +27,7 @@ describe("Tournament", function(){
 		spyOn(Tournaments, "update");
 		var startDate = Date.now();
 		var endDate = startDate + 1;
-		var tournament = new Tournament(1, "VM", startDate, endDate);
+		var tournament = new Tournament("1", "VM", startDate, endDate);
 
 		var updatedStartDate = endDate + 1;
 		var updatedEndDate = updatedStartDate + 1;
@@ -39,7 +39,7 @@ describe("Tournament", function(){
 
         // use last call to access arguments
         expect(Tournaments.update).toHaveBeenCalled();
-        expect(Tournaments.update.calls.mostRecent().args[0]).toEqual(1);
+        expect(Tournaments.update.calls.mostRecent().args[0]).toEqual("1");
         expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "EM", startDate:updatedStartDate, endDate: updatedEndDate}});
     });
 
@@ -70,11 +70,23 @@ describe("Tournament", function(){
 	it("should be possible to remove tournament", function () {
 		spyOn(Tournaments, "remove");
 
-		var tournament = new Tournament(1);
+		var tournament = new Tournament("1");
 		tournament.delete();
 
         // use last call to access arguments
         expect(Tournaments.remove).toHaveBeenCalled();
-        expect(Tournaments.remove.calls.mostRecent().args[0]).toEqual(1);
+        expect(Tournaments.remove.calls.mostRecent().args[0]).toEqual("1");
+    });
+
+    it("should be possible to add a group to a tournament", function(){
+    	var tournament = new Tournament("1");
+    	tournament.addGroup("A");
+    	expect(tournament.groups.length).toBe(1);
+    });
+
+    it("should not be possible not add the same group twice", function(){
+    	var tournament = new Tournament("1");
+    	tournament.addGroup("A");
+    	expect(function(){ tournament.addGroup("A") }).toThrow();
     });
 });

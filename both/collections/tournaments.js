@@ -15,6 +15,7 @@ Tournaments = new Mongo.Collection('tournaments', {
  	this._name=name;
  	this._startDate=startDate;
  	this._endDate=endDate;
+    this._groups = [];
  }
  Tournament.prototype = {
  	get id(){
@@ -35,6 +36,9 @@ Tournaments = new Mongo.Collection('tournaments', {
  	get active(){
  		return this._endDate >= Date.now();
  	},
+    get groups(){
+        return this._groups;
+    },
  	set name(value){
  		this._name=value;
  	},
@@ -47,6 +51,12 @@ Tournaments = new Mongo.Collection('tournaments', {
  	set author(value){
  		this._author=value;
  	},
+    addGroup: function(group){
+        if (_.contains(this._groups, group)) {
+            throw new Meteor.Error("Group already added!");
+        };
+        this._groups.push(group);
+    },
  	save: function(callback) {
  		if (!this.name) {
  			throw new Meteor.Error("Name is not defined!");

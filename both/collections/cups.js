@@ -55,7 +55,7 @@ Cups = new Mongo.Collection('cups');
  	},
  	addMember: function(member){
  		if (_.contains(this._members, member)) {
- 			throw new Meteor.Error("Duplicate user already added!");
+ 			throw new Meteor.Error("User already added!");
  		};
  		this._members.push(member);
  	}
