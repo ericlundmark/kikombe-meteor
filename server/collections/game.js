@@ -5,7 +5,7 @@
  *  }
  */
 
-Game.allow({
+Games.allow({
   insert: function (userId, doc) {
     return true;
   },
@@ -19,7 +19,7 @@ Game.allow({
   }
 });
 
-Game.deny({
+Games.deny({
   insert: function (userId, doc) {
     return false;
   },

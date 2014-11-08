@@ -4,16 +4,116 @@
 		"selected_items":
 		[
 			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"ga",
+				"Games"
+			],
+			[
+				"s",
+				"startDate"
+			],
+			[
+				"sta",
+				"startDate"
+			],
+			[
+				"st",
+				"startDate"
+			],
+			[
+				"th",
+				"that"
+			],
+			[
+				"Game",
+				"Games"
+			],
+			[
+				"_",
+				"_start"
+			],
+			[
+				"ti",
+				"this"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"star",
+				"start"
+			],
+			[
+				"Tou",
+				"Tournaments"
+			],
+			[
+				"To",
+				"Tournaments"
+			],
+			[
+				"to",
+				"tournament"
+			],
+			[
+				"u",
+				"updatedEndDate"
+			],
+			[
+				"no",
+				"now"
+			],
+			[
+				"ge",
+				"getSeconds"
+			],
+			[
+				"e",
+				"error"
+			],
+			[
+				"c",
+				"created"
+			],
+			[
+				"upd",
+				"updatedStartDate"
+			],
+			[
+				"cal",
+				"callback"
+			],
+			[
+				"Toura",
+				"Tournaments"
+			],
+			[
+				"start",
+				"startDate"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"en",
+				"endDate"
+			],
+			[
+				"Tor",
+				"Tournament"
+			],
+			[
 				"wid",
 				"width"
 			],
 			[
 				"in",
 				"input"
-			],
-			[
-				"c",
-				"console"
 			],
 			[
 				"selec",
@@ -36,10 +136,6 @@
 				"groupName"
 			],
 			[
-				"to",
-				"tournament"
-			],
-			[
 				"g",
 				"g"
 			],
@@ -60,40 +156,20 @@
 				"tournamentId"
 			],
 			[
-				"ga",
-				"games"
-			],
-			[
 				"gr",
 				"groupName"
-			],
-			[
-				"To",
-				"Tournament"
 			],
 			[
 				"p",
 				"push"
 			],
 			[
-				"en",
-				"entry"
-			],
-			[
 				"da",
 				"data"
 			],
 			[
-				"end",
-				"end"
-			],
-			[
 				"fo",
 				"format"
-			],
-			[
-				"st",
-				"startDate"
 			],
 			[
 				"back",
@@ -108,16 +184,8 @@
 				"function"
 			],
 			[
-				"t",
-				"tournament"
-			],
-			[
 				"cons",
 				"console"
-			],
-			[
-				"Tor",
-				"tournament"
 			],
 			[
 				"crea",
@@ -127,13 +195,49 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "tests/jasmine/server/unit/gameDataModelSpec.js",
+			"settings":
+			{
+				"buffer_size": 1132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "both/collections/games.js",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "both/collections/tournaments.js",
+			"settings":
+			{
+				"buffer_size": 1855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/jasmine/server/unit/tournamentDataModelSpec.js",
+			"settings":
+			{
+				"buffer_size": 2942,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 306.0,
+		"height": 285.0,
 		"selected_items":
 		[
+			[
+				"angular",
+				"AngularJS: Toggle - Disable All Completions"
+			],
 			[
 				"list",
 				"Package Control: List Packages"
@@ -176,6 +280,19 @@
 	},
 	"file_history":
 	[
+		"/home/eric/Documents/kikombe-meteor/both/collections/tournaments.js",
+		"/home/eric/Documents/kikombe-meteor/server/seed/users.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/games.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/tournamentDataModelSpec.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/gameDataModelSpec.js",
+		"/home/eric/Documents/kikombe-meteor/server/collections/game.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/client/integration/tournamentIntegrationSpec.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/tournament.js",
+		"/home/eric/Documents/kikombe-meteor/server/seed/game.js",
+		"/home/eric/Documents/kikombe-meteor/server/collections/tournament.js",
+		"/home/eric/Documents/kikombe-meteor/server/seed/tournament.js",
+		"/home/eric/Documents/kikombe-meteor/both/methods/tournaments.js",
+		"/home/eric/Documents/kikombe-meteor/both/methods/game.js",
 		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_show/tournament_show.css",
 		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_index/tournament_index.js",
 		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_show/tournament_show.js",
@@ -183,16 +300,12 @@
 		"/home/eric/Documents/kikombe-meteor/client/app.html",
 		"/home/eric/Documents/kikombe-meteor/both/router/routes.js",
 		"/home/eric/Documents/kikombe-meteor/client/views/tournament/tournament_index/tournament_index.html",
-		"/home/eric/Documents/kikombe-meteor/server/seed/tournament.js",
-		"/home/eric/Documents/kikombe-meteor/server/seed/game.js",
 		"/home/eric/Documents/kikombe-meteor/both/methods/tournament.js",
 		"/home/eric/Documents/kikombe-meteor/client/views/game/game_create/game_create.html",
 		"/home/eric/Documents/kikombe-meteor/client/app.js",
 		"/home/eric/Documents/kikombe-meteor/client/views/game/game_create/game_create.js",
-		"/home/eric/Documents/kikombe-meteor/both/methods/game.js",
 		"/home/eric/Documents/kikombe-meteor/both/app.js",
 		"/home/eric/Documents/kikombe-meteor/both/collections/game.js",
-		"/home/eric/Documents/kikombe-meteor/both/collections/tournament.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/server/packages/insecure.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/local/build/programs/ctl/npm/logging/node_modules/cli-color/node_modules/es5-ext/lib/Number/is-nan.js",
 		"/home/eric/Documents/kikombe-meteor/.meteor/packages",
@@ -221,6 +334,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"create",
 			"div",
 			"game",
 			"                    \n"
@@ -241,8 +355,124 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "tests/jasmine/server/unit/gameDataModelSpec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1018,
+								1018
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "both/collections/games.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								602
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "both/collections/tournaments.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tests/jasmine/server/unit/tournamentDataModelSpec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1588,
+								1588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 137.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

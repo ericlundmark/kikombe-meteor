@@ -5,7 +5,7 @@
  *  }
  */
 
-Cup.allow({
+Cups.allow({
   insert: function (userId, doc) {
     return true;
   },
@@ -19,7 +19,7 @@ Cup.allow({
   }
 });
 
-Cup.deny({
+Cups.deny({
   insert: function (userId, doc) {
     return false;
   },

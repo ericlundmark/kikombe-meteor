@@ -5,7 +5,7 @@
  *  }
  */
 
-Tournament.allow({
+Tournaments.allow({
   insert: function (userId, doc) {
     return true;
   },
@@ -19,7 +19,7 @@ Tournament.allow({
   }
 });
 
-Tournament.deny({
+Tournaments.deny({
   insert: function (userId, doc) {
     return false;
   },
