@@ -4,12 +4,120 @@
 		"selected_items":
 		[
 			[
-				"if",
-				"ife	if … else"
+				"st",
+				"startDate"
 			],
 			[
 				"ga",
-				"Games"
+				"game"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"gr",
+				"groups"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"tou",
+				"Tournaments"
+			],
+			[
+				"grou",
+				"groups"
+			],
+			[
+				"n",
+				"now"
+			],
+			[
+				"to",
+				"tournament"
+			],
+			[
+				"fin",
+				"findWhere"
+			],
+			[
+				"gam",
+				"games"
+			],
+			[
+				"get",
+				"getGroup"
+			],
+			[
+				"add",
+				"addGroup"
+			],
+			[
+				"m",
+				"member"
+			],
+			[
+				"t",
+				"this"
+			],
+			[
+				"ad",
+				"addMember"
+			],
+			[
+				"me",
+				"members"
+			],
+			[
+				"call",
+				"callFake"
+			],
+			[
+				"memb",
+				"members"
+			],
+			[
+				"C",
+				"Cup"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"Cu",
+				"Cup"
+			],
+			[
+				"_",
+				"_id"
+			],
+			[
+				"c",
+				"cup"
+			],
+			[
+				"fi",
+				"function"
+			],
+			[
+				"da",
+				"Date"
+			],
+			[
+				"To",
+				"Tournament"
+			],
+			[
+				"Ga",
+				"Game"
+			],
+			[
+				"G",
+				"Game"
 			],
 			[
 				"s",
@@ -20,27 +128,11 @@
 				"startDate"
 			],
 			[
-				"st",
-				"startDate"
-			],
-			[
-				"th",
-				"that"
-			],
-			[
 				"Game",
 				"Games"
 			],
 			[
-				"_",
-				"_start"
-			],
-			[
 				"ti",
-				"this"
-			],
-			[
-				"t",
 				"this"
 			],
 			[
@@ -50,14 +142,6 @@
 			[
 				"Tou",
 				"Tournaments"
-			],
-			[
-				"To",
-				"Tournaments"
-			],
-			[
-				"to",
-				"tournament"
 			],
 			[
 				"u",
@@ -74,10 +158,6 @@
 			[
 				"e",
 				"error"
-			],
-			[
-				"c",
-				"created"
 			],
 			[
 				"upd",
@@ -124,24 +204,12 @@
 				"selectedGame"
 			],
 			[
-				"fi",
-				"find"
-			],
-			[
-				"fin",
-				"function"
-			],
-			[
 				"gro",
 				"groupName"
 			],
 			[
 				"g",
 				"g"
-			],
-			[
-				"n",
-				"name"
 			],
 			[
 				"te",
@@ -156,16 +224,8 @@
 				"tournamentId"
 			],
 			[
-				"gr",
-				"groupName"
-			],
-			[
 				"p",
 				"push"
-			],
-			[
-				"da",
-				"data"
 			],
 			[
 				"fo",
@@ -196,34 +256,18 @@
 	"buffers":
 	[
 		{
-			"file": "tests/jasmine/server/unit/gameDataModelSpec.js",
+			"file": "tests/jasmine/client/integration/cupIntegrationSpec.js",
 			"settings":
 			{
-				"buffer_size": 1132,
+				"buffer_size": 440,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "both/collections/games.js",
+			"file": "tests/jasmine/client/integration/tournamentIntegrationSpec.js",
 			"settings":
 			{
-				"buffer_size": 899,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "both/collections/tournaments.js",
-			"settings":
-			{
-				"buffer_size": 1855,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tests/jasmine/server/unit/tournamentDataModelSpec.js",
-			"settings":
-			{
-				"buffer_size": 2942,
+				"buffer_size": 602,
 				"line_ending": "Unix"
 			}
 		}
@@ -280,11 +324,14 @@
 	},
 	"file_history":
 	[
+		"/home/eric/Documents/kikombe-meteor/both/collections/cups.js",
 		"/home/eric/Documents/kikombe-meteor/both/collections/tournaments.js",
-		"/home/eric/Documents/kikombe-meteor/server/seed/users.js",
-		"/home/eric/Documents/kikombe-meteor/both/collections/games.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/cupDataModelSpec.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/tournamentDataModelSpec.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/gameDataModelSpec.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/games.js",
+		"/home/eric/Documents/kikombe-meteor/server/collections/cup.js",
+		"/home/eric/Documents/kikombe-meteor/server/seed/users.js",
 		"/home/eric/Documents/kikombe-meteor/server/collections/game.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/client/integration/tournamentIntegrationSpec.js",
 		"/home/eric/Documents/kikombe-meteor/both/collections/tournament.js",
@@ -355,53 +402,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tests/jasmine/server/unit/gameDataModelSpec.js",
+					"file": "tests/jasmine/client/integration/cupIntegrationSpec.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1132,
+						"buffer_size": 440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1018,
-								1018
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "both/collections/games.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 899,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								597,
-								602
+								245,
+								245
 							]
 						],
 						"settings":
@@ -409,27 +427,27 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "both/collections/tournaments.js",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "tests/jasmine/client/integration/tournamentIntegrationSpec.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1855,
+						"buffer_size": 602,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								324,
+								324
 							]
 						],
 						"settings":
@@ -438,39 +456,11 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": -0.0,
-						"translation.y": 585.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "tests/jasmine/server/unit/tournamentDataModelSpec.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2942,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1588,
-								1588
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 137.0,
-						"translation.y": 135.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
 					"type": "text"
 				}
 			]
