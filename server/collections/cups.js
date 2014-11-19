@@ -7,11 +7,11 @@
 
 Cups.allow({
   insert: function (userId, doc) {
-    return true;
+    return userId;
   },
 
   update: function (userId, doc, fieldNames, modifier) {
-    return true;
+    return doc.owner == userId;
   },
 
   remove: function (userId, doc) {

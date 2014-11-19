@@ -1,8 +1,10 @@
-Tournaments = new Mongo.Collection('tournaments', {
-    transform: function(doc) {
-        return new Tutorial(doc._id, doc.name, doc.startDate, doc.endDate);
-    }
-});
+Tournaments = new Mongo.Collection('tournaments', { transform: function(doc){
+    var tournament = new Game(doc.id, doc.name, doc.startDate, doc.endDate);
+    doc.groups.forEach(function(entry){
+        tournament.addGroup(entry);
+    });
+    return tournament;
+}});
 
 /*
  * Add query methods like this:

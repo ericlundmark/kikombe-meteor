@@ -7,15 +7,15 @@
 
 Tournaments.allow({
   insert: function (userId, doc) {
-    return true;
+    return Roles.userIsInRole(userId, ['admin']);
   },
 
   update: function (userId, doc, fieldNames, modifier) {
-    return true;
+    return Roles.userIsInRole(userId, ['admin']);;
   },
 
   remove: function (userId, doc) {
-    return true;
+    return Roles.userIsInRole(userId, ['admin']);;
   }
 });
 

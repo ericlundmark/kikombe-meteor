@@ -99,7 +99,7 @@ describe("Tournament", function(){
 		expect(function(){ tournament.addGroup("A") }).toThrow();
 	});
 
-	it("should be possible to add a game to one group", function(){
+	it("should be possible to add a game to a group", function(){
 		spyOn(Tournaments, "update");
 		var startDate = Date.now();
 		var tournament = new Tournament("1", "VM", startDate, startDate + 1);
@@ -107,7 +107,7 @@ describe("Tournament", function(){
 		var group = "A";
 		tournament.addGroup(group);
 
-		var game = {home: "home", away: "away", start: Date.now};
+		var game = new Game("home", "away", startDate);
 		tournament.addGame(game, group);
 		expect(tournament.getGroup(group).games.length).toBe(1);
 
@@ -117,5 +117,21 @@ describe("Tournament", function(){
 		expect(Tournaments.update.calls.mostRecent().args[0]).toEqual("1");
 		expect(Tournaments.update.calls.mostRecent().args[1]).toEqual({$set: { name: "VM", startDate: startDate,
 			endDate: startDate + 1, groups: [{name: "A", games: [game]}]}});
+	});
+
+	it("should not be possible to add a game to a group that doesnt exist", function(){
+		var startDate = Date.now();
+		var tournament = new Tournament("1", "VM", startDate, startDate + 1);
+
+		var game = new Game("home", "away", startDate);
+		expect(function(){tournament.addGame(game, "A")}).toThrow();
+	});
+
+	it("should not be possible to add a game without a group", function(){
+		var startDate = Date.now();
+		var tournament = new Tournament("1", "VM", startDate, startDate + 1);
+
+		var game = new Game("home", "away", startDate);
+		expect(function(){tournament.addGame(game, null)}).toThrow();
 	});
 });

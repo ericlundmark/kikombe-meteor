@@ -4,12 +4,116 @@
 		"selected_items":
 		[
 			[
-				"st",
-				"startDate"
+				"e",
+				"entry"
+			],
+			[
+				"d",
+				"doc"
+			],
+			[
+				"add",
+				"addGroup"
+			],
+			[
+				"to",
+				"tournament"
 			],
 			[
 				"ga",
 				"game"
+			],
+			[
+				"tor",
+				"tournaments"
+			],
+			[
+				"s",
+				"score"
+			],
+			[
+				"Ga",
+				"Game"
+			],
+			[
+				"i",
+				"id"
+			],
+			[
+				"t",
+				"tournament"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"c",
+				"Cups"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"E",
+				"error"
+			],
+			[
+				"u",
+				"userId"
+			],
+			[
+				"tou",
+				"Tournament"
+			],
+			[
+				"predi",
+				"prediction"
+			],
+			[
+				"C",
+				"Cups"
+			],
+			[
+				"_",
+				"_predictions"
+			],
+			[
+				"pre",
+				"predictions"
+			],
+			[
+				"predic",
+				"predictions"
+			],
+			[
+				"if",
+				"ife	if … else"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"G",
+				"Games"
+			],
+			[
+				"a",
+				"away"
+			],
+			[
+				"get",
+				"get	Get Elements"
+			],
+			[
+				"pr",
+				"prototype"
+			],
+			[
+				"st",
+				"start"
 			],
 			[
 				"th",
@@ -24,20 +128,8 @@
 				"update"
 			],
 			[
-				"tou",
-				"Tournaments"
-			],
-			[
 				"grou",
 				"groups"
-			],
-			[
-				"n",
-				"now"
-			],
-			[
-				"to",
-				"tournament"
 			],
 			[
 				"fin",
@@ -48,20 +140,8 @@
 				"games"
 			],
 			[
-				"get",
-				"getGroup"
-			],
-			[
-				"add",
-				"addGroup"
-			],
-			[
 				"m",
 				"member"
-			],
-			[
-				"t",
-				"this"
 			],
 			[
 				"ad",
@@ -80,24 +160,8 @@
 				"members"
 			],
 			[
-				"C",
-				"Cup"
-			],
-			[
-				"if",
-				"if	if"
-			],
-			[
 				"Cu",
 				"Cup"
-			],
-			[
-				"_",
-				"_id"
-			],
-			[
-				"c",
-				"cup"
 			],
 			[
 				"fi",
@@ -110,18 +174,6 @@
 			[
 				"To",
 				"Tournament"
-			],
-			[
-				"Ga",
-				"Game"
-			],
-			[
-				"G",
-				"Game"
-			],
-			[
-				"s",
-				"startDate"
 			],
 			[
 				"sta",
@@ -144,20 +196,12 @@
 				"Tournaments"
 			],
 			[
-				"u",
-				"updatedEndDate"
-			],
-			[
 				"no",
 				"now"
 			],
 			[
 				"ge",
 				"getSeconds"
-			],
-			[
-				"e",
-				"error"
 			],
 			[
 				"upd",
@@ -216,10 +260,6 @@
 				"teamName"
 			],
 			[
-				"a",
-				"away_team"
-			],
-			[
 				"toru",
 				"tournamentId"
 			],
@@ -256,18 +296,34 @@
 	"buffers":
 	[
 		{
-			"file": "tests/jasmine/client/integration/cupIntegrationSpec.js",
+			"file": "both/collections/games.js",
 			"settings":
 			{
-				"buffer_size": 440,
+				"buffer_size": 1270,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "tests/jasmine/client/integration/tournamentIntegrationSpec.js",
+			"file": "tests/jasmine/client/integration/GameIntegrationSpec.js",
 			"settings":
 			{
-				"buffer_size": 602,
+				"buffer_size": 1135,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tests/jasmine/client/integration/TournamentIntegrationSpec.js",
+			"settings":
+			{
+				"buffer_size": 3725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "both/collections/tournaments.js",
+			"settings":
+			{
+				"buffer_size": 2577,
 				"line_ending": "Unix"
 			}
 		}
@@ -324,12 +380,22 @@
 	},
 	"file_history":
 	[
+		"/home/eric/Documents/kikombe-meteor/server/collections/games.js",
+		"/home/eric/Documents/kikombe-meteor/server/collections/tournaments.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/CupDataModelSpec.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/client/integration/CupIntegrationSpec.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/client/integration/GameIntegrationSpec.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/client/integration/TournamentIntegrationSpec.js",
 		"/home/eric/Documents/kikombe-meteor/both/collections/cups.js",
+		"/home/eric/Documents/kikombe-meteor/server/collections/cups.js",
 		"/home/eric/Documents/kikombe-meteor/both/collections/tournaments.js",
+		"/home/eric/Documents/meteor-test/tests/jasmine/client/integration/CupIntegrationSpec.js",
+		"/home/eric/Documents/kikombe-meteor/both/collections/games.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/GameDataModelSpec.js",
+		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/TournamentDataModelSpec.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/cupDataModelSpec.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/tournamentDataModelSpec.js",
 		"/home/eric/Documents/kikombe-meteor/tests/jasmine/server/unit/gameDataModelSpec.js",
-		"/home/eric/Documents/kikombe-meteor/both/collections/games.js",
 		"/home/eric/Documents/kikombe-meteor/server/collections/cup.js",
 		"/home/eric/Documents/kikombe-meteor/server/seed/users.js",
 		"/home/eric/Documents/kikombe-meteor/server/collections/game.js",
@@ -402,52 +468,82 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "tests/jasmine/client/integration/cupIntegrationSpec.js",
+					"file": "both/collections/games.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 440,
+						"buffer_size": 1270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								245,
-								245
+								199,
+								199
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tests/jasmine/client/integration/tournamentIntegrationSpec.js",
+					"file": "tests/jasmine/client/integration/GameIntegrationSpec.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 602,
+						"buffer_size": 1135,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								324,
-								324
+								513,
+								513
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tests/jasmine/client/integration/TournamentIntegrationSpec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2990,
+								2990
 							]
 						],
 						"settings":
@@ -460,7 +556,37 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "both/collections/tournaments.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								261,
+								261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
