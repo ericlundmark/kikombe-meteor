@@ -1,8 +1,9 @@
 Tournaments = new Mongo.Collection('tournaments', { transform: function(doc){
-    var tournament = new Game(doc.id, doc.name, doc.startDate, doc.endDate);
+    var tournament = new Tournament(doc._id, doc.name, doc.startDate, doc.endDate);
     doc.groups.forEach(function(entry){
         tournament.addGroup(entry);
     });
+    tournament.author = doc.author;
     return tournament;
 }});
 
@@ -86,8 +87,7 @@ Tournaments = new Mongo.Collection('tournaments', { transform: function(doc){
         if (this.id) {
         	Tournaments.update(this.id, {$set: doc}, callback);
         } else{
-        	doc.author = Meteor.userId();
-
+            if (!this.author) {doc.author = Meteor.userId();} ;
         	Tournaments.insert(doc, function(error, result) {
         		that._id = result;
 
